@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.emodultatatulis.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_kegiatan"
+        android:name="com.example.emodultatatulis.ui.gallery.GalleryFragment"
+        android:label="@string/menu_kegiatan"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_kegiatan_to_lembarKegiatanFragment"
+            app:destination="@id/lembarKegiatanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.emodultatatulis.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_daftar_pustaka"
+        android:name="com.example.emodultatatulis.ui.daftarPustaka.DaftarPustakaFragment"
+        android:label="@string/menu_daftar_pustaka"
+        tools:layout="@layout/fragment_daftar_pustaka" />
+    <fragment
+        android:id="@+id/nav_petunjuk"
+        android:name="com.example.emodultatatulis.ui.petunjuk.PetunjukFragment"
+        android:label="@string/menu_petunjuk"
+        tools:layout="@layout/fragment_petunjuk" />
+    <fragment
+        android:id="@+id/nav_profil"
+        android:name="com.example.emodultatatulis.ui.profil.ProfilFragment"
+        android:label="Profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/nav_pendahuluan"
+        android:name="com.example.emodultatatulis.ui.pendahuluan.PendahuluanFragment"
+        android:label="@string/menu_pendahuluan"
+        tools:layout="@layout/fragment_pendahuluan" />
+    <fragment
+        android:id="@+id/nav_materi"
+        android:name="com.example.emodultatatulis.ui.materi.MateriFragment"
+        android:label="@string/menu_materi"
+        tools:layout="@layout/fragment_materi" >
+
+        <action
+            android:id="@+id/action_nav_materi_to_materiDetailFragment"
+            app:destination="@id/materiDetailFragment" />
+        <action
+            android:id="@+id/action_nav_materi_to_quizActivity"
+            app:destination="@id/quizActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/lembarKegiatanFragment"
+        android:name="com.example.emodultatatulis.ui.gallery.LembarKegiatanFragment"
+        android:label="Lembar Kegiatan"
+        tools:layout="@layout/fragment_lembar_kegiatan" />
+    <fragment
+        android:id="@+id/materiDetailFragment"
+        android:name="com.example.emodultatatulis.ui.materi.MateriDetailFragment"
+        android:label="fragment_materi_detail"
+        tools:layout="@layout/fragment_materi_detail" />
+    <activity
+        android:id="@+id/quizActivity"
+        android:name="com.example.emodultatatulis.QuizActivity"
+        android:label="activity_quiz"
+        tools:layout="@layout/activity_quiz" />
+    <fragment
+        android:id="@+id/nav_cpembelajaran"
+        android:name="com.example.emodultatatulis.ui.campaianpembelajaran.CpembelajaranFragment"
+        android:label="Campaian Pembelajaran"
+        tools:layout="@layout/fragment_cpembelajaran" />
+</navigation>
