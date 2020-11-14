@@ -64,35 +64,36 @@ class QuizFragment : Fragment() {
             }
             "MATERI 3" -> {
                 (activity as AppCompatActivity).supportActionBar?.title = "Tes Materi 3"
-
+                Pertanyaan(mkViewModel.kuisMateriTiga)
             }
             "MATERI 4" -> {
                 (activity as AppCompatActivity).supportActionBar?.title = "Tes Materi 4"
-
+                Pertanyaan(mkViewModel.kuisMateriEmpat)
             }
             "MATERI 5" -> {
                 (activity as AppCompatActivity).supportActionBar?.title = "Tes Materi 5"
-
+                Pertanyaan(mkViewModel.kuisMateriLima)
             }
             "MATERI 6" -> {
                 (activity as AppCompatActivity).supportActionBar?.title = "Tes Materi 6"
+                Pertanyaan(mkViewModel.kuisMateriEnam)
 
             }
             "MATERI 7" -> {
                 (activity as AppCompatActivity).supportActionBar?.title = "Tes Materi 7"
-
+                Pertanyaan(mkViewModel.kuisMateriTujuh)
             }
             "MATERI 8" -> {
                 (activity as AppCompatActivity).supportActionBar?.title = "Tes Materi 8"
-
+                Pertanyaan(mkViewModel.kuisMateriDelapan)
             }
             "MATERI 9" -> {
                 (activity as AppCompatActivity).supportActionBar?.title = "Tes Materi 9"
-
+                Pertanyaan(mkViewModel.kuisMateriSembilan)
             }
             "MATERI 10" -> {
                 (activity as AppCompatActivity).supportActionBar?.title = "Tes Materi 10"
-
+                Pertanyaan(mkViewModel.kuisMateriSepuluh)
             }
         }
 
